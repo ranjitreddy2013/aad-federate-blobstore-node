@@ -6,7 +6,7 @@ metadata:
   labels:
     app: storefederate
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: storefederate
@@ -30,13 +30,13 @@ spec:
         - name: FEDERATED_ENVIRONMENT
           value: spiffe
         - name: AAD_AUTHORITY
-          value: https://login.microsoftonline.com
+          value: https://login.microsoftonline.com/
         - name: AZURE_CLIENT_ID
-          value: f2cee0bf-4f61-48ac-99ec-4ca7e3238817
+          value: aead113c-24c6-47e3-93ce-3a7dafc5fd99
         - name: AZURE_TENANT_ID
-          value: 76d50ae7-5230-4c2c-978c-9ad08e18d4b6 
+          value: 72f988bf-86f1-41af-91ab-2d7cd011db47
         - name: BLOB_STORE_ACCOUNT
-          value: ranjitsa
+          value: demofederate
         - name: LOG_LEVEL
           value: debug
       nodeSelector:

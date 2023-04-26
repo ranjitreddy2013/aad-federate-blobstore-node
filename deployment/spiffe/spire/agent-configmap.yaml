@@ -20,7 +20,7 @@ data:
         plugin_data {
           # TODO: Change this to your cluster name
           # cluster = "demo-cluster"
-          cluster = "spire1"
+          cluster = "k8scluster"
         }
       }
 

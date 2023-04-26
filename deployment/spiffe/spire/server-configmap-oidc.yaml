@@ -26,7 +26,7 @@ data:
 
       # Creates the iss claim in JWT-SVIDs.
       # TODO: Replace MY_DISCOVERY_DOMAIN with the FQDN of the Discovery Provider that you will configure in DNS
-      jwt_issuer = "https://demo-oidc.identitydigest.com"
+      jwt_issuer = "https://demo-oidc.theidentitydigest.com"
 
       ca_key_type = "rsa-2048"
 
@@ -51,7 +51,7 @@ data:
           clusters = {
             # TODO: Change this to your cluster name
             #"demo-cluster" = {
-            "spire1" = {
+            "k8scluster" = {
               use_token_review_api_validation = true
               service_account_allow_list = ["spire:spire-agent"]
             }

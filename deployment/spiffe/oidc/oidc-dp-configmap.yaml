@@ -7,13 +7,13 @@ data:
   oidc-discovery-provider.conf: |
     log_level = "INFO"
     # TODO: Replace  with the FQDN of the Discovery Provider that you will configure in DNS
-    domain = "demo-oidc.identitydigest.com"
+    domains = ["demo-oidc.theidentitydigest.com"]
     acme {
         directory_url = "https://acme-v02.api.letsencrypt.org/directory"
         cache_dir = "/run/spire"
         tos_accepted = true
         # TODO: Change MY_EMAIL_ADDRESS with your email
-        email = "someone@gmail.com"
+        email = "ranjitreddy@gmail.com"
     }
     set_key_use = true
     workload_api {
